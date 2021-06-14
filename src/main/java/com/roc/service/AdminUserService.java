@@ -1,12 +1,12 @@
 package com.roc.service;
 
-import com.roc.domain.SystemAdminUser;
+import com.roc.domain.AdminUser;
 
 import java.util.List;
 
 public interface AdminUserService {
 
-    List<SystemAdminUser> findAll();
+    List<AdminUser> findAll();
 
-    SystemAdminUser findById(int id);
+    AdminUser findById(int id);
 }

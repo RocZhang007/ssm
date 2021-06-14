@@ -3,19 +3,19 @@
 <configuration>
 
     <!--引入外部properties文件 必须放在前面，否则会报错-->
-    <properties resource="properties/jdbc.properties"></properties>
+    <!--<properties resource="properties/jdbc.properties"></properties>-->
 
     <!--映射别名-->
     <typeAliases>
-        <typeAlias type="com.roc.domain.SystemAdminUser" alias="SystemAdminUser"></typeAlias>
+        <typeAlias type="com.roc.domain.AdminUser" alias="AdminUser"></typeAlias>
     </typeAliases>
 
     <!--数据库配置-->
-    <environments default="development">
+    <!--<environments default="development">
         <environment id="development">
-            <!--使用JDBC事务管理-->
+            &lt;!&ndash;使用JDBC事务管理&ndash;&gt;
             <transactionManager type="JDBC"></transactionManager>
-            <!--数据库连接池-->
+            &lt;!&ndash;数据库连接池&ndash;&gt;
             <dataSource type="POOLED">
                 <property name="driver" value="${jdbc.driver}"/>
                 <property name="url" value="${jdbc.url}"/>
@@ -23,13 +23,14 @@
                 <property name="password" value="${jdbc.password}"/>
             </dataSource>
         </environment>
-    </environments>
+    </environments>-->
 
     <!--加载映射关系-->
     <mappers>
+        <!--扫描sql配置文件:mapper需要的xml文件-->
+        <mapper resource="mapper/system/AdminUser.xml"></mapper>
         <!--指定接口所在的包-->
-        <!--<mapper resource="mapper/system/AdminUser.xml"></mapper>-->
-        <package name="com.roc.dao"></package>
+        <!--<package name="com.roc.dao"></package>-->
     </mappers>
 
 </configuration>

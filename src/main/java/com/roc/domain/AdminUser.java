@@ -2,7 +2,7 @@ package com.roc.domain;
 
 import java.util.Date;
 
-public class SystemAdminUser {
+public class AdminUser {
     private int id;
     private String name;
     private String photo;

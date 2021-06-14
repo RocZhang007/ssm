@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.roc.dao.ActivityCountDao">
+    <update id="updateNumber" parameterType="com.roc.domain.Count">
+        update hb_activity_count set number = #{number} where id = #{id}
+    </update>
+
+    <insert id="saveNumber" parameterType="com.roc.domain.Count">
+        insert into hb_activity_count values (#{id},#{act_name},#{type_name},#{number})
+    </insert>
+</mapper>

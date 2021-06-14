@@ -20,39 +20,13 @@
   </properties>
 
   <dependencies>
+
+    <!-- 第一部分：Spring 配置-->
     <!--spring部份-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>5.1.2.RELEASE</version>
-    </dependency>
-
-    <!--AOP框架 建议使用AspectJ来开发AOP-->
-    <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>aspectjweaver</artifactId>
-      <version>1.8.4</version>
-    </dependency>
-
-    <!--mybatis部份-->
-    <dependency>
-      <groupId>org.mybatis</groupId>
-      <artifactId>mybatis</artifactId>
-      <version>3.5.2</version>
-    </dependency>
-
-    <!--数据库驱动-->
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.45</version>
-    </dependency>
-
-    <!--连接池-->
-    <dependency>
-      <groupId>c3p0</groupId>
-      <artifactId>c3p0</artifactId>
-      <version>0.9.1.2</version>
     </dependency>
 
     <!--测试包-->
@@ -69,6 +43,59 @@
       <artifactId>log4j</artifactId>
       <version>1.2.12</version>
     </dependency>
+
+    <!--AOP框架 建议使用AspectJ来开发AOP-->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.4</version>
+    </dependency>
+
+    <!--事务平台管理包-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>5.1.2.RELEASE</version>
+    </dependency>
+
+    <!--spring JDBC模板-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.3.5</version>
+    </dependency>
+
+    <!-- 第f二部分：Spring-mvc 配置-->
+
+    <!-- 第三部分：数据库和mybatis -->
+    <!--mybatis部份-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.5.2</version>
+    </dependency>
+
+    <!--数据库驱动-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.45</version>
+    </dependency>
+
+    <!--连接池-->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.5.2</version>
+    </dependency>
+
+    <!-- mybatis-spring整合包 -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>1.3.1</version>
+    </dependency>
+
   </dependencies>
 
   <!--maven部份-->

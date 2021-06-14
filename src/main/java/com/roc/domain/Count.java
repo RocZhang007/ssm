@@ -1,6 +1,6 @@
 package com.roc.domain;
 
-public class ActivityCount {
+public class Count {
     private int id;
     private String act_name;
     private String type_name;
